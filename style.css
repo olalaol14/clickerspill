@@ -1,0 +1,243 @@
+body{
+  background-color:#F4EBEE;
+}
+#wrapper{
+  display:flex;
+  border: solid black 5px;
+  padding: 40px;
+}
+#leftbox{
+  order: 1;
+  height:700;
+  border-style: solid;
+  flex-basis:350px;
+  background-color:#008cd1;
+}
+#main{
+  order: 2;
+  height: 750px;
+  border-style: solid;
+  flex-basis:750px;
+  margin-left: 50px;
+  margin-top: -30px;
+  background-color:#D9D4CE;
+}
+#rightbox {
+	order: 3;
+	height: 700px;
+	border-style: solid;
+	flex-basis: 350px;
+	margin-left: 50px;
+	border: solid 2px rgb(149, 161, 170);
+	padding: 10px;
+}
+#topright {
+	flex-basis: 250px;
+	height: 400px;
+	border: solid 1px #008cd1;
+	background-color: #cc1e4a;
+}
+#bottomright {
+	margin-top: 10px;
+	flex-basis: 250xpx;
+	height: 280px;
+	border: solid 1px #008cd1;
+	background-color: #004c6c;
+}
+h1{
+  font-size: 35px;
+  text-align:center;
+}
+h2{
+  margin-left:10px;
+  font-size:25px;
+}
+p{
+  margin-left: 10px;
+}
+.littlebig{
+  font-size: 20px;
+}
+.buy{
+  border-radius: 0px;
+  width: 90px;
+  height: 50px;
+  float: right;
+  margin-top: -55px;
+  margin-right: 15px;
+}
+.buyall{
+  width: 200px;
+  height: 75px;
+  margin-left: 45px;
+}
+#car{
+  width: 100px;
+  height: auto;
+  margin left: 50px;
+  margin-top: 100px;
+  padding-left: 65px;
+}
+.workshopbuy {
+	border-radius: 0px;
+	width: 110px;
+	height: 50px;
+	float: right;
+	margin-top: -55px;
+	margin-right: 15px;
+	transform: scale(0.7);
+	transform-origin: bottom;
+}
+.workshopbuytxt {
+	margin-left: 10px;
+	font-size: 17px;
+}
+#workshop {
+	font-size: 25px;
+}
+#carfactory {
+	font-size: 25px;
+  text-shadow: 1px 1px gray;
+}
+#makenewcar {
+	height: 100px;
+	width: 250px;
+	margin-left: 50px;
+}
+#prob{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+#wealth{
+  float: right;
+  background-color: white;
+  border: solid 2px #202a2f;
+  width:150px;
+  height:175px;
+  margin-right:30px;
+  margin-top:-50px;
+}
+#line{
+  width: 90%;
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+#raceresults{
+  text-align: center;
+  font-size: 30px;
+  margin-top: -5px;
+}
+#placement{
+  float:left;
+  margin-left: 175px;
+  margin-top: -18px;
+}
+#earnings{
+  float: right;
+  margin-right: 175px;
+  margin-top: -18px;
+}
+#race{
+  background-color: #cb2026;
+  color: white;
+  border-radius: 5px;
+  width:100px;
+  height:50px;
+  margin-left: 43%;
+  margin-top: -60px;
+}
+#racetxt{
+  margin-top:0px;
+  -webkit-touch-callout : none
+  -webkit-user-select:none
+}
+#cash{
+  color: #ffc906;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 26px;
+}
+.orange{
+  color:orange;
+}
+#inventory{
+    margin-top: 10px;
+}
+#factory{
+  position: absolute;
+  top: 660px;
+  right: 115px;
+  font-size: 17px;
+}
+#mainwrapper{
+  display: flex;
+  border: 2px solid black;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 30px;
+  margin-bottom: 10px;
+  margin-top: 85px;
+}
+#divnr{
+  position: absolute;
+  left: 730px;
+}
+#div3{
+  order: 1;
+  height: 150px;
+  width: 150px;
+  border: 5px solid black;
+  border-radius: 150px;
+  background-color: #31ae81;
+}
+#gatebil{
+  margin-left: 30%;
+  font-size: 20px;
+}
+#div3text{
+  margin-left: 60px;
+  font-size: 17px;
+}
+#div2{
+  order: 2;
+  height: 150px;
+  width: 150px;
+  border: 5px solid black;
+  border-radius: 150px;
+  background-color: #ee8e3f;
+  margin-left: 60px;
+  margin-right: auto;
+}
+#nascar{
+  margin-left: 30%;
+  font-size: 20px;
+}
+#div2text{
+  margin-left: 60px;
+  font-size: 17px;
+}
+#div1{
+  order: 3;
+  height: 150px;
+  width: 150px;
+  border: 5px solid black;
+  border-radius: 150px;
+  background-color: #e7262d;
+  margin-right: 0px;
+  margin-left: auto;
+}
+#f1{
+  margin-left: 42%;
+  font-size: 20px;
+}
+#div1text{
+  margin-left: 60px;
+  font-size: 17px;
+}
+#divnr{
+  font-size: 23px;
+  position: absolute;
+  bottom: 350px;
+}

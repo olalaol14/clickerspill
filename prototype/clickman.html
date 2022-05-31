@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel=stylesheet href=style.css>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="man1">
+        <div id="man1meny">
+          <p id="anntallmen">Du har 0 men</p>
+          <button class="manknapp"><p id="mentext" onclick="buyman()">Man: 50 men</p></button><br>
+          <button class="manknapp"><p id="betatext" onclick="buybeta()">Betamale: 500 men</p></button><br>
+          <button class="manknapp"><p id="sigmatext" onclick="buysigma()">Sigmamale: 5000 men</p></button><br>
+          <button class="manknapp"><p id="alfatxt" onclick="buyalfa()">Alfamale: 50000 men</p></button><br>
+          <button class="manknapp"><p id="chadtext" onclick="buychad()">Chad: 1000000 men</p></button><br>
+          <p id="inventory">Du har 0 man, 0 betamale, 0 sigmamale, 0 alfamale og 0 chad</p>
+        </div>
+      </div>
+      <div id="man2">
+    <img src="man.jpg" id="man" onclick="manclick()" >
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      var anntallmen = 0;
+      var man = 0;
+      var betamale = 0;
+      var sigmamale = 0;
+      var alfamale = 0;
+      var chad = 0;
+      var manpris = 50;
+      var betapris = 500;
+      var sigmapris = 5000;
+      var alfapris = 50000;
+      var chadpris = 1000000;
+      var mananntall = 0;
+      anntallbeta = 0;
+      
+
+      function manclick(){
+        anntallmen ++;
+        console.log(anntallmen);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        document.getElementById("inventory").innerHTML = "Du har " + mananntall + " man, "
+         + anntallbeta + " betamale, " + anntallsigma + " sigmamale, " + anntallalfa + "alfamale, " + anntallchad + " chad."
+      }
+      function buyman(){
+        if (anntallmen > manpris){
+        man += 1;
+        anntallmen -= manpris;
+        manpris = Math.floor(manpris*1.1);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        }
+        else {
+          alert("du er fattig")
+        }
+      }
+      function buybeta(){
+        if (anntallmen > betapris){
+        betamale += 10;
+        anntallmen -= betapris;
+        betapris = Math.floor(betapris*1.1);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        }
+        else {
+          alert("du er fattig")
+        }
+      }
+      function buysigma(){
+        if (anntallmen > sigmapris){
+        sigmamale += 100;
+        anntallmen -= sigmapris;
+        sigmapris = Math.floor(sigmapris*1.1);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        }
+        else {
+          alert("du er fattig")
+        }
+      }
+      function alfaman(){
+        if (anntallmen > alfapris){
+        alfamale += 1000;
+        anntallmen -= alfapris;
+        alfapris = Math.floor(alfapris*1.1);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        }
+        else {
+          alert("du er fattig")
+        }
+      }
+      function buychad(){
+        if (anntallmen > chadpris){
+        chad += 10000;
+        anntallmen -= chadpris;
+        chadpris = Math.floor(chadpris*1.1);
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+        }
+        else {
+          alert("du er fattig")
+        }
+      }
+
+
+
+
+      const interval =
+      setInterval(refresh,1000)
+
+      function refresh(){
+        anntallmen += man;
+        anntallmen += betamale;
+        anntallmen += sigmamale;
+        anntallmen += alfamale;
+        anntallmen += chad;
+        document.getElementById("anntallmen").innerHTML = "Du har " + anntallmen + " men"
+      }
+    </script>
+  </body>
+</html>
